@@ -1,0 +1,48 @@
+{
+  "name": "alirezaabdolmaleki/raygan-sms",
+  "type": "library",
+  "description": "A simple API extension for send text message By Raygan Sms",
+  "keywords": [
+    "alirezaabdolmaleki",
+    "raygansms"
+  ],
+  "support": {
+    "issues": "https://github.com/alirezaabdolmaleki/RayganSms/issues",
+    "source": "https://github.com/alirezaabdolmaleki/RayganSms"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alireza Abdolmaleki",
+      "email": "alaabibest@gmail.com",
+      "homepage": "https://alireza-abdolmaleki.ir"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6.4",
+    "illuminate/support": "*",
+    "illuminate/notifications": "*",
+    "guzzlehttp/guzzle": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Alirezaabdolmaleki\\RayganSms\\": "src/"
+    }
+  },
+  "config": {
+    "process-timeout": 0,
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Alirezaabdolmaleki\\RayganSms\\RayganSmsServiceProvider"
+      ],
+        "aliases": {
+            "RayganSms": "Alirezaabdolmaleki\\RayganSms\\Facades"
+        }
+    }
+  }
+}
